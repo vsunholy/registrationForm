@@ -15,7 +15,7 @@ document.getElementById('registrationForm').addEventListener('submit', function 
 
     // Email validacija
     const email = document.getElementById('email').value;
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
         valid = false;
         document.getElementById('emailError').textContent = 'Please enter a valid email address.';
     }
