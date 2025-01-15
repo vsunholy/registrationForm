@@ -108,8 +108,8 @@ const createFlyingText = () => {
     textElement.className = 'flying-text';
     document.body.appendChild(textElement);
 
-    const randomX = Math.random() * (window.innerWidth - 200); 
-    const randomY = Math.random() * (window.innerHeight - 50); 
+    const randomX = Math.random() * (window.innerWidth - 200);
+    const randomY = Math.random() * (window.innerHeight - 50);
     const randomDuration = Math.random() * 5 + 5;
 
     textElement.style.left = `${randomX}px`;
@@ -117,10 +117,10 @@ const createFlyingText = () => {
     textElement.style.animationDuration = `${randomDuration}s`;
 
     setTimeout(() => {
-        textElement.style.opacity = '0'; 
+        textElement.style.opacity = '0';
         setTimeout(() => {
-            textElement.remove(); 
-        }, 1000); 
+            textElement.remove();
+        }, 1000);
     }, randomDuration * 1000);
 };
 
